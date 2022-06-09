@@ -30,6 +30,10 @@ namespace AppWEB.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<Solicitante>()
+                .Property(e => e.numero_doc)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Solicitante>()
                 .Property(e => e.fechanac)
                 .IsUnicode(false);
 

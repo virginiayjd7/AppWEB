@@ -96,6 +96,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\css\bootstrap-grid.css" />
+    <Content Include="Assets\css\bootstrap-grid.min.css" />
+    <Content Include="Assets\css\bootstrap-grid.rtl.css" />
+    <Content Include="Assets\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="Assets\css\bootstrap-reboot.css" />
+    <Content Include="Assets\css\bootstrap-reboot.min.css" />
+    <Content Include="Assets\css\bootstrap-reboot.rtl.css" />
+    <Content Include="Assets\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Assets\css\bootstrap-utilities.css" />
+    <Content Include="Assets\css\bootstrap-utilities.min.css" />
+    <Content Include="Assets\css\bootstrap-utilities.rtl.css" />
+    <Content Include="Assets\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Assets\css\bootstrap.css" />
+    <Content Include="Assets\css\bootstrap.min.css" />
+    <Content Include="Assets\css\bootstrap.rtl.css" />
+    <Content Include="Assets\css\bootstrap.rtl.min.css" />
     <Content Include="Assets\css\mobile.css" />
     <Content Include="Assets\css\reset.css" />
     <Content Include="Assets\css\skin\cool-gray.css" />
@@ -151,6 +167,12 @@
     <Content Include="Assets\inc\smoothscroll.js" />
     <Content Include="Assets\inc\stellar\js\jquery.stellar.min.js" />
     <Content Include="Assets\inc\waypoints.min.js" />
+    <Content Include="Assets\js\bootstrap.bundle.js" />
+    <Content Include="Assets\js\bootstrap.bundle.min.js" />
+    <Content Include="Assets\js\bootstrap.esm.js" />
+    <Content Include="Assets\js\bootstrap.esm.min.js" />
+    <Content Include="Assets\js\bootstrap.js" />
+    <Content Include="Assets\js\bootstrap.min.js" />
     <Content Include="Assets\js\theme.js" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
@@ -158,12 +180,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CertificadoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SolicitanteController.cs" />
+    <Compile Include="Controllers\TramiteController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Certificado.cs" />
     <Compile Include="Models\dbcerti.cs" />
+    <Compile Include="Models\ResponseModel.cs" />
+    <Compile Include="Models\SessionHelper.cs" />
     <Compile Include="Models\Solicitante.cs" />
     <Compile Include="Models\sysdiagrams.cs" />
     <Compile Include="Models\TipoDocumento.cs" />
@@ -184,10 +211,37 @@
     <Content Include="Assets\inc\font-awesome\fonts\fontawesome-webfont.woff2" />
     <Content Include="Assets\inc\font-awesome\fonts\FontAwesome.otf" />
     <Content Include="files\PLANO CATASTRAL_WGS84-1.pdf" />
+    <Content Include="Assets\css\bootstrap-grid.css.map" />
+    <Content Include="Assets\css\bootstrap-grid.min.css.map" />
+    <Content Include="Assets\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="Assets\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Assets\css\bootstrap-reboot.css.map" />
+    <Content Include="Assets\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Assets\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Assets\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Assets\css\bootstrap-utilities.css.map" />
+    <Content Include="Assets\css\bootstrap-utilities.min.css.map" />
+    <Content Include="Assets\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Assets\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Assets\css\bootstrap.css.map" />
+    <Content Include="Assets\css\bootstrap.min.css.map" />
+    <Content Include="Assets\css\bootstrap.rtl.css.map" />
+    <Content Include="Assets\css\bootstrap.rtl.min.css.map" />
+    <Content Include="Assets\js\bootstrap.bundle.js.map" />
+    <Content Include="Assets\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Assets\js\bootstrap.esm.js.map" />
+    <Content Include="Assets\js\bootstrap.esm.min.js.map" />
+    <Content Include="Assets\js\bootstrap.js.map" />
+    <Content Include="Assets\js\bootstrap.min.js.map" />
     <None Include="packages.config" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Certificado\Index.cshtml" />
+    <Content Include="Views\Solicitante\Index.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Tramite\Index.cshtml" />
+    <Content Include="Views\Tramite\Tramite.cshtml" />
+    <None Include="Properties\PublishProfiles\AppWEB20220219101623 - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
